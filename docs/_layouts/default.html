@@ -41,7 +41,6 @@
 
         <aside id="sidebar">
             {% assign pages = site.pages | where: "dir", "/my-to-do/" %}
-<!--            {% assign pages = site.pages %}-->
             {% for page in pages %}
             <a href={{ page.url }}>{{ page.title }}</a>
             </br>
