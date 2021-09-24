@@ -1,5 +1,5 @@
 layout: page
-title: "PAGE ONE"
-permalink: /page-1/
+title: "PAGE TWO"
+permalink: /source/page-2/
 
-Hello world
+Hello world 2
