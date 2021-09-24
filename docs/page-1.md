@@ -1,5 +1,5 @@
 layout: page
 title: "PAGE ONE"
-permalink: /page-1/
+permalink: /new-topic/page-2/
 
-Hello world
+Hello world 2
