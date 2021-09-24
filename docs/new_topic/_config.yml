@@ -1,5 +1,5 @@
 show_downloads: true
 title: Open Maritime Wiki
 description: All the seamen would need.
-baseurl: /new-topic/
+baseurl: https://stihotvor.github.io/open-maritime-wiki/new-topic/
 theme: jekyll-theme-architect
