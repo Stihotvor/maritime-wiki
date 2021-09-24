@@ -1,0 +1,5 @@
+show_downloads: true
+title: Open Maritime Wiki
+description: All the seamen would need.
+baseurl: /new-topic/
+theme: jekyll-theme-architect
