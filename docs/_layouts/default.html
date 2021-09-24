@@ -40,7 +40,8 @@
         </section>
 
         <aside id="sidebar">
-            {% for page in site.pages | where: "dir", "my-to-do" %}
+            {% assign pages = site.pages | where: "dir", "my-to-do" %}
+            {% for page in pages %}
             <a href={{ page.url }}>{{ page.title }}</a>
             </br>
             {{ page.dir }}
