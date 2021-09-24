@@ -40,8 +40,15 @@
         </section>
 
         <aside id="sidebar">
+            {% if site.show_downloads %}
+            <a href="{{ site.github.zip_url }}" class="button">
+                <small>Download</small>
+                .zip file
+            </a>
+            {% endif %}
+            <hr>
             <details>
-                <summary>My To Do</summary>
+                <summary><h2>My To Do</h2></summary>
                 {% assign pages = site.pages | where: "dir", "/my-to-do/" %}
                 {% for page in pages %}
                     <a href={{ page.url }}>{{ page.title }}</a>
@@ -49,12 +56,6 @@
                 {% endfor %}
             </details>
 
-            {% if site.show_downloads %}
-            <a href="{{ site.github.zip_url }}" class="button">
-                <small>Download</small>
-                .zip file
-            </a>
-            {% endif %}
 
             {% if site.github.is_project_page %}
             <p class="repo-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is
