@@ -41,8 +41,7 @@
 
         <aside id="sidebar">
             <details>
-                <summary>My To Do</summary>                <p>Informacje szczegółowe na dany temat.</p>
-
+                <summary>My To Do</summary>
                 {% assign pages = site.pages | where: "dir", "/my-to-do/" %}
                 {% for page in pages %}
                     <a href={{ page.url }}>{{ page.title }}</a>
