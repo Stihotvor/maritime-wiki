@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: " en-US" }}">
+<html lang="{{ site.lang | default: "en-US" }}">
 <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,8 +20,11 @@
 <body>
 <header>
     <nav>
-        {% assign menu = site.menus.header %}
-        {% include menus.html %}
+        <ul>
+            <li class="menu-item-1">
+                <a href="/hello" title="Go to hello page">Menu 1</a>
+            </li>
+        </ul>
     </nav>
     <div class="inner">
         <a href="{{ '/' | absolute_url }}">
