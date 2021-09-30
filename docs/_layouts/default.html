@@ -40,12 +40,12 @@
         </section>
         <aside id="sidebar">
             <h2>Categories</h2>
-                <h3>My To Do</h3>
-                {% assign pages = site.pages | where "dir", "/my-to-do/" %}
-                {% for page in pages %}
-                <a href={{ page.url }}>{{ page.title }}</a>
-                </br>
-                {% endfor %}
+            <h3>My To Do</h3>
+            {% assign pages = site.pages | where: "dir", "/my-to-do/" %}
+            {% for page in pages %}
+            <a href={{ page.url }}>{{ page.title }}</a>
+            </br>
+            {% endfor %}
 
             {% if site.github.is_project_page %}
             <p class="repo-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is
