@@ -39,11 +39,9 @@
             <h2>Categories</h2>
             <details>
                 <summary><h3>My To Do</h3></summary>
-                {% assign pages = site.pages | where: "dir", "/my-to-do/" %}
-                {{ pages }}
                 {% for page in site.pages %}
                 <a href={{ page.url }}>{{ page.title }}</a>
-                page.dir
+                {{ page.dir }}
                 </br>
                 {% endfor %}
             </details>
