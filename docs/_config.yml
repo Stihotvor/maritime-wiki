@@ -5,5 +5,3 @@ theme: jekyll-theme-architect
 include:
   - source
   - my-to-do
-plugins:
-- jekyll-menus
