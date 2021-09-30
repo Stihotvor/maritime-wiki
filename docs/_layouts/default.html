@@ -19,6 +19,10 @@
 
 <body>
 <header>
+    <nav>
+        {% assign menu = site.menus.header %}
+        {% include menus.html %}
+    </nav>
     <div class="inner">
         <a href="{{ '/' | absolute_url }}">
             <h1>{{ site.title | default: site.github.repository_name }}</h1>
@@ -52,8 +56,8 @@
                 <summary><h3>My To Do</h3></summary>
                 {% assign pages = site.pages | where: "dir", "/my-to-do/" %}
                 {% for page in pages %}
-                    <a href={{ page.url }}>{{ page.title }}</a>
-                    </br>
+                <a href={{ page.url }}>{{ page.title }}</a>
+                </br>
                 {% endfor %}
             </details>
             <hr>
