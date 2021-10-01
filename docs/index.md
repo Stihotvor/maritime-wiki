@@ -1,1 +1,1 @@
-Main page will be here 000
+<h1>Main page will be here 000</h1>
