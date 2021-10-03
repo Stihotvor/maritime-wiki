@@ -3,5 +3,6 @@ title: Open Maritime Wiki
 description: All the seamen would need.
 theme: jekyll-theme-architect
 include:
-  - source
   - my-to-do
+  - source
+  - index.md
