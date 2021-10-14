@@ -5,3 +5,13 @@
     border-top: none;
   }
 }
+
+#menu-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#menu-item {
+    padding-bottom: 5px;
+}
