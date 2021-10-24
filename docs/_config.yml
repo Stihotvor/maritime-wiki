@@ -1,7 +1,9 @@
 show_downloads: true
 title: Open Maritime Wiki
 description: All the seamen would need.
-theme: jekyll-theme-architect
+collections:
+  tools:
+    output: true
 include:
   - my-to-do
   - source

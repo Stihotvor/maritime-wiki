@@ -3,8 +3,7 @@ services:
   jekyll:
     image: jekyll/jekyll:4.2.0
     command: >
-      bash -c "gem install jekyll-theme-architect
-      && jekyll serve --force_polling"
+      jekyll serve --force_polling
     ports:
       - 4000:4000
     volumes:

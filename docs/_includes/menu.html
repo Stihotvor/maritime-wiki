@@ -1,13 +1,17 @@
-{% if menu %}
-<ul id="menu-list">
-    {% for item in menu %}
-    <li id="menu-item" class="menu-item-{{ loop.index }}">
-        <a href="{{ item.url }}" title="Go to {{ item.title }}">{{ item.title }}</a>
-        {% if item.children %}
-        {% assign menu = item.children %}
-        {% include menu.html %}
-        {% endif %}
-    </li>
-    {% endfor %}
-</ul>
-{% endif %}
+<nav id="menu">
+    <header class="major">
+        <h2>Menu</h2>
+    </header>
+    <ul>
+        <li><a href="/">Homepage</a></li>
+        <li><a href="/elements.html">Elements</a></li>
+        <li>
+            <span class="opener">Tools</span>
+            <ul>
+                {% for tool in site.tools %}
+                <li><a href="{{ tool.url }}">{{ tool.name }}</a></li>
+                {% endfor %}
+            </ul>
+        </li>
+    </ul>
+</nav>

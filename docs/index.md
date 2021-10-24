@@ -1,5 +1,9 @@
 ---
-layout: default
-title: "Welcome"
+layout: default  
+title: "Welcome"  
+header: "Hello world"  
+big-banner: true  
+features: true
+posts-preview: true
 ---
-<h1>Main page will be here 000</h1>
+
