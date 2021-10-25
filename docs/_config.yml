@@ -5,6 +5,4 @@ collections:
   tools:
     output: true
 include:
-  - my-to-do
-  - source
   - index.md
