@@ -1,6 +1,7 @@
 show_downloads: true
 title: Open Maritime Wiki
 description: All the seamen would need.
+baseurl: "/open-maritime-wiki/"
 collections:
   tools:
     output: true
