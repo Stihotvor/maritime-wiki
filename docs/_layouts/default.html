@@ -38,7 +38,7 @@
             {% if page.posts-preview %}{% include posts-preview.html %}{% endif %}
 
             <!-- Content -->
-            {{ content }}
+            {% if page.single-post %}{% include single-post.html %}{% endif %}
 
         </div>
     </div>
